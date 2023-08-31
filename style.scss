@@ -1,0 +1,44 @@
+@use 'var';
+@use 'general';
+
+
+
+@mixin tab($defaultColor, $defaultFontSize: 24pt){
+    color: $defaultColor;
+    font-size: $defaultFontSize;
+}
+
+
+.content{
+    background-color: var.$background-color;
+}
+
+%box{
+    background-color: white;
+    box-shadow: lightgray 0 0 3px 3px;
+}
+
+
+.icon{
+    @include tab($defaultColor: gray);
+    display: flex;
+}
+.icon img{
+    width: 40px;
+    margin-right: 15px
+}
+
+
+
+
+
+.box{
+    @extend %box;
+}
+
+
+.button{
+    background-color: white;
+    border: 1px lightgray solid;
+    border-radius: 3px;
+}

@@ -1,6 +1,7 @@
-.box, .currentItems, .total, .overviewItems, .top {
+.viewsSection, .calendar, .currentItems, .total, .overviewItems, .top {
   background-color: white;
   box-shadow: lightgray 0 0 5px 5px;
+  border-radius: 5px;
 }
 
 .overviewItems img, .nav a img {
@@ -123,6 +124,11 @@ button {
   height: 300px;
 }
 
+.plans {
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
 .totalSalesSection {
   display: flex;
   flex-direction: column;
@@ -156,6 +162,43 @@ button {
   justify-content: space-around;
 }
 
+.currentTasks {
+  flex-grow: 1;
+}
+
 .topCurrent {
   display: flex;
+}
+
+.calendarTop {
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  font-size: 24px;
+}
+
+.row div {
+  width: 50px;
+  height: 50px;
+}
+
+.userVisits {
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+.viewsSection {
+  display: flex;
+}
+
+.viewGraph img {
+  width: 200px;
+  height: auto;
+}
+
+.messageUser {
+  width: 300px;
 }/*# sourceMappingURL=style.css.map */

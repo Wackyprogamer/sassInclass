@@ -18,6 +18,15 @@
     margin-right: 15px;
 }
 
+%floatingBoxes {
+
+    background-color: white;
+
+    display: flex;
+
+}
+
+
 
 
 *{
@@ -219,4 +228,170 @@ button{
 width: 300px
 }
 
+.SearchItems {
 
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    position: relative;
+
+}
+
+.searchMessage {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: column;
+    
+}
+
+.searchMessage h1, h5 {
+
+    color: white;
+
+}
+
+.searchInput {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+}
+
+.searchInput input {
+
+    border: 1xp solid black;
+    
+    height: 100%;
+
+    margin-right: 0;
+
+    margin-left: 0;
+
+    padding-left: 0;
+
+    padding-right: 0;
+}
+
+.searchInput i {
+
+    margin-right: 0;
+
+}
+
+.allDocs {
+
+    border-top-right-radius: 20px;
+
+    border-bottom-right-radius: 20px;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+
+.searchbutton {
+
+    cursor: pointer;
+
+    border-radius: 20px;
+
+}
+
+.popularkey {
+
+
+display: flex;
+
+flex-direction: row;
+
+justify-content: center;
+
+align-items: center;
+
+font-size: 12px;
+
+}
+
+.popularkey h5 {
+
+    margin-right: 25px;
+
+    color: white;
+
+}
+
+.popularkey span {
+
+    cursor: pointer;
+
+
+    margin-right: 10px;
+
+    padding: 5px 15px;
+
+    border: 1px solid black;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    color: white;
+
+}
+
+.floatingBox {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    align-items: center
+
+}
+
+.knowledge {
+
+    @extend %floatingBoxes;
+}
+
+.communityForums {
+
+    @extend %floatingBoxes;
+
+}
+
+.documentation {
+
+    @extend %floatingBoxes;
+
+}
+
+.WorkingwithDocs {
+
+    @extend %floatingBoxes;
+
+}
+
+.gettingStarted {
+
+    @extend %floatingBoxes;
+
+}
+
+.accountManagement {
+
+    @extend %floatingBoxes;
+
+}

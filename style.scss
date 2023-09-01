@@ -8,27 +8,171 @@
     font-size: $defaultFontSize;
 }
 
-
-.content{
-    background-color: var.$background-color;
-}
-
 %box{
     background-color: white;
-    box-shadow: lightgray 0 0 3px 3px;
+    box-shadow: lightgray 0 0 5px 5px;
+}
+%icon{
+    width: 30px;
+    margin-right: 15px;
 }
 
 
-.icon{
+
+*{
+    color: gray;
+    text-decoration: none;  
+}
+body{
+    background-color: var.$background-color;
+    justify-content: center;
+}
+.content{
+    background-color: var.$content-color;
+    max-width: 1600px;
+    margin: 100px auto 100px auto
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
+}
+h6{
+    font-size: 18px;
+    margin: 0 100% 0 0;
+}
+i{
+    margin-right: 50px;
+    font-size: 24px
+}
+button{
+    background-color: white;
+    border: 1px gray solid;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+.boxHead{
+    display: flex;
+    height: 75px;
+    width: auto;
+    align-items: center;
+}
+
+
+
+.top{
+    @extend %box;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px 15px 50px;
+    border-bottom: solid 2px lightgrey;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile img{
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 3px lightgrey solid;
+    margin-right: 15px;
+}
+
+.nav{
+    display: flex;
+    padding: 50px 100px 50px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.nav a{
     @include tab($defaultColor: gray);
     display: flex;
+    font-size: 20px;
+    align-items: center;
 }
-.icon img{
-    width: 40px;
-    margin-right: 15px
+.nav a img{
+    @extend %icon;
 }
 
 
+
+.dashboard{
+    display: flex;
+    margin: 50px 100px 50px 100px;
+    flex-direction: column;
+}
+.topSection{
+    display: flex;
+    justify-content: baseline;
+}
+.bottomSection{
+    display: flex;
+}
+
+
+.overview{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.overviewTop{
+    display: flex
+}
+.overviewItems{
+    @extend %box;
+    height: 300px;
+
+}
+.overviewItems img{
+    @extend %icon;
+}
+
+
+.totalSalesSection{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    @extend %box;
+    height: 300px;
+    padding: 0 15px;
+}
+.y-axis{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.graphTop{
+    display: flex
+}
+.graph img{
+    width: 400px;
+    height: 150px;
+}
+.graphDates{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+.currentItems{
+    @extend %box;
+}
+.topCurrent{
+    display: flex;
+}
 
 
 
@@ -37,8 +181,3 @@
 }
 
 
-.button{
-    background-color: white;
-    border: 1px lightgray solid;
-    border-radius: 3px;
-}

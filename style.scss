@@ -23,11 +23,36 @@
     background-color: white;
 
     display: flex;
+    
+    padding: 20px;
+}
+
+%Icons {
+
+    display: flex;
+
+    font-size: 50px;
+ 
+    align-items: center;
 
 }
 
+%bottomBoxes {
 
+    background-color: white;
 
+    padding: 80px 40px;
+
+    border-radius: 20px;
+
+    margin: 0 20px;
+}
+
+%h3floatcolor {
+
+    color: black;
+
+}
 
 *{
     color: gray;
@@ -247,12 +272,14 @@ width: 300px
     align-items: center;
 
     flex-direction: column;
+
+    font-size: 18px;
     
 }
 
 .searchMessage h1, h5 {
 
-    color: white;
+    color: black;
 
 }
 
@@ -266,9 +293,21 @@ width: 300px
 
 }
 
-.searchInput input {
+.backgroundSearch {
 
-    border: 1xp solid black;
+background-color: white;
+
+border: 1px solid black;
+
+border-radius: 50px;
+
+padding: 15px 10px;
+
+}
+
+
+
+.searchInput input {
     
     height: 100%;
 
@@ -279,23 +318,26 @@ width: 300px
     padding-left: 0;
 
     padding-right: 0;
+
+    border: 0px solid;
 }
 
 .searchInput i {
 
     margin-right: 0;
 
+    margin-left: 20px;
+
 }
+
 
 .allDocs {
 
-    border-top-right-radius: 20px;
-
-    border-bottom-right-radius: 20px;
-
-    position: relative;
+    border: 0px solid;
 
     cursor: pointer;
+
+    color: black;
 }
 
 
@@ -303,7 +345,17 @@ width: 300px
 
     cursor: pointer;
 
-    border-radius: 20px;
+    border-radius: 30px;
+
+    padding: 0 60px;
+
+    margin-left: 40px;
+
+    background-color: rgb(58, 77, 243);
+
+    color: black;
+
+    font-weight: bold;
 
 }
 
@@ -326,7 +378,7 @@ font-size: 12px;
 
     margin-right: 25px;
 
-    color: white;
+    color: black;
 
 }
 
@@ -345,7 +397,7 @@ font-size: 12px;
 
     font-size: 10px;
 
-    color: white;
+    color: black;
 
 }
 
@@ -357,18 +409,66 @@ font-size: 12px;
 
     justify-content: center;
 
-    align-items: center
+    align-items: center;
+
+    width: 100%;
 
 }
 
 .knowledge {
 
     @extend %floatingBoxes;
+
+    width: 30%;
+
+    border: 1px solid grey;
+
+    border-left: none;
+
+    border-top: none;
+
+    border-top-left-radius: 20px;
+}
+
+.knowledge i {
+
+   @extend %Icons;
+}
+
+.knowledge h3 {
+
+    @extend %h3floatcolor;
+
+    cursor: pointer;
+
 }
 
 .communityForums {
 
     @extend %floatingBoxes;
+
+    width: 30%;
+
+    border: 1px solid grey;
+
+    border-left: none;
+
+    border-top: none;
+
+
+}
+
+.communityForums i {
+
+    @extend %Icons;
+
+}
+
+.communityForums h3 {
+
+    @extend %h3floatcolor;
+
+    cursor: pointer;
 
 }
 
@@ -376,11 +476,59 @@ font-size: 12px;
 
     @extend %floatingBoxes;
 
+    width: 30%;
+
+    border: 1px solid grey;
+
+    border-left: none;
+
+    border-top: none;
+
+    border-right: none;
+
+    border-top-right-radius: 20px;
+
+}
+
+.documentation i {
+
+    @extend %Icons;
+
+}
+
+.documentation h3 {
+
+    @extend %h3floatcolor;
+
+    cursor: pointer;
+
 }
 
 .WorkingwithDocs {
 
     @extend %floatingBoxes;
+
+    width: 30%;
+
+    border: 1px solid grey;
+
+    border-left: none;
+
+    border-top: none;
+
+}
+
+.WorkingwithDocs i {
+
+    @extend %Icons;
+
+}
+
+.WorkingwithDocs h3 {
+
+    @extend %h3floatcolor;
+
+    cursor: pointer;
 
 }
 
@@ -388,10 +536,290 @@ font-size: 12px;
 
     @extend %floatingBoxes;
 
+    width: 30%;
+
+    border: 1px solid grey;
+
+    border-left: none;
+
+    border-top: none;
+
+
+}
+
+.gettingStarted i {
+
+    @extend %Icons;
+
+}
+
+.gettingStarted h3 {
+
+    @extend %h3floatcolor;
+
+    cursor: pointer;
+
 }
 
 .accountManagement {
 
     @extend %floatingBoxes;
+
+    width: 30%;
+
+    border: 1px solid black;
+
+    border-left: none;
+
+    border-top: none;
+
+    border-right: none;
+}
+
+.accountManagement i {
+
+    @extend %Icons;
+
+}
+
+.accountManagement h3 {
+
+    @extend %h3floatcolor;
+
+    cursor: pointer;
+
+}
+.productivity {
+
+    @extend %floatingBoxes;
+
+    width: 30%;
+
+    border: 1px solid grey;
+
+    border-left: none;
+
+    border-top: none;
+
+
+}
+
+.productivity i {
+
+    @extend %Icons;
+
+}
+
+.productivity h3 {
+
+    @extend %h3floatcolor;
+
+    cursor: pointer;
+
+}
+
+.taskHelp {
+
+    @extend %floatingBoxes;
+
+    width: 30%;
+
+    border: 1px solid grey;
+
+    border-left: none;
+
+    border-top: none;
+
+
+}
+
+.taskHelp i {
+
+    @extend %Icons;
+
+}
+
+.taskHelp h3 {
+
+    @extend %h3floatcolor;
+
+    cursor: pointer;
+
+}
+
+.totalSalesHelp {
+
+    @extend %floatingBoxes;
+
+    width: 30%;
+
+    border: 1px solid grey;
+
+    border-left: none;
+
+    border-top: none;
+
+    border-right: none;
+
+
+}
+
+.totalSalesHelp i {
+
+    @extend %Icons;
+
+}
+
+.totalSalesHelp h3 {
+
+    @extend %h3floatcolor;
+
+    cursor: pointer;
+
+}
+
+.showMore {
+
+    @extend %floatingBoxes;
+    
+    width: 95%;
+
+    border: 1px;
+
+    border-bottom-left-radius: 20px;
+
+    border-bottom-right-radius: 20px;
+
+}
+
+.showMore i {
+
+    @extend %Icons;
+
+}
+
+.showMore h4{
+
+    cursor: pointer;
+
+    color: #7605ff;
+
+}
+
+.recommended {
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+margin-bottom: 40px;
+
+}
+
+.recommended h2{
+
+text-align: center;
+
+font-size: 35px;
+
+color: black;
+
+}
+
+.recommended span {
+
+font-size: 20px;
+
+}
+
+.bottomBoxes {
+
+display: flex;
+
+justify-content: center;
+
+padding-bottom: 80px;
+
+}
+
+.getstartBox {
+
+    @extend %bottomBoxes;
+
+    cursor: pointer;
+
+}
+
+.getstartBox i {
+
+    @extend %Icons;
+
+}
+
+.getstartBox h2{
+
+    color: black;
+
+}
+
+.advanceBox {
+
+    @extend %bottomBoxes;
+
+    cursor: pointer;
+
+}
+
+.advanceBox i {
+
+    @extend %Icons;
+
+}
+
+.advanceBox h2{
+
+    color: black;
+
+}
+
+.knowledgeBox {
+
+    @extend %bottomBoxes;
+
+    cursor: pointer;
+
+}
+
+.knowledgeBox i {
+
+    @extend %Icons;
+
+}
+
+.knowledgeBox h2{
+
+    color: black;
+
+}
+
+.usersettBox {
+
+    @extend %bottomBoxes;
+
+    cursor: pointer;
+
+}
+
+.usersettBox i {
+
+    @extend %Icons;
+
+}
+
+.usersettBox h2{
+
+    color: black;
 
 }

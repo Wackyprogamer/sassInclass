@@ -310,6 +310,9 @@ button{
     justify-content: space-between;
     margin-top: 30px;
 }
+.taskBottom .time{
+    align-items: center;
+}
 .midCurrent .task h6{
     margin-right: 50px;
 }
@@ -974,4 +977,9 @@ padding-bottom: 80px;
 
 button:hover{
     background-color: rgba(0, 0, 0, 0.136);
+    cursor: pointer;
+}
+
+i:hover{
+    cursor: pointer;
 }

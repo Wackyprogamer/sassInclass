@@ -17,6 +17,29 @@
   margin-right: 15px;
 }
 
+.showMore, .totalSalesHelp, .taskHelp, .productivity, .accountManagement, .gettingStarted, .WorkingwithDocs, .documentation, .communityForums, .knowledge {
+  background-color: white;
+  display: flex;
+  padding: 20px;
+}
+
+.usersettBox i, .knowledgeBox i, .advanceBox i, .getstartBox i, .showMore i, .totalSalesHelp i, .taskHelp i, .productivity i, .accountManagement i, .gettingStarted i, .WorkingwithDocs i, .documentation i, .communityForums i, .knowledge i {
+  display: flex;
+  font-size: 50px;
+  align-items: center;
+}
+
+.usersettBox, .knowledgeBox, .advanceBox, .getstartBox {
+  background-color: white;
+  padding: 80px 40px;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+
+.totalSalesHelp h3, .taskHelp h3, .productivity h3, .accountManagement h3, .gettingStarted h3, .WorkingwithDocs h3, .documentation h3, .communityForums h3, .knowledge h3 {
+  color: black;
+}
+
 * {
   color: gray;
   text-decoration: none;
@@ -337,4 +360,267 @@ button {
   color: white;
   border-color: white;
   margin-top: 50px;
+}
+
+.SearchItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.searchMessage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.searchMessage h1, h5 {
+  color: black;
+}
+
+.searchInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.backgroundSearch {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 15px 10px;
+}
+
+.searchInput input {
+  height: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0px solid;
+}
+
+.searchInput i {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.allDocs {
+  border: 0px solid;
+  cursor: pointer;
+  color: black;
+}
+
+.searchbutton {
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 0 60px;
+  margin-left: 40px;
+  background-color: #029af7;
+  color: black;
+  font-weight: bold;
+}
+
+.popularkey {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.popularkey h5 {
+  margin-right: 25px;
+  color: black;
+}
+
+.popularkey span {
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 5px 15px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 10px;
+  color: black;
+}
+
+.floatingBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.knowledge {
+  width: 30%;
+  border: 1px solid grey;
+  border-left: none;
+  border-top: none;
+  border-top-left-radius: 20px;
+}
+
+.knowledge h3 {
+  cursor: pointer;
+}
+
+.communityForums {
+  width: 30%;
+  border: 1px solid grey;
+  border-left: none;
+  border-top: none;
+}
+
+.communityForums h3 {
+  cursor: pointer;
+}
+
+.documentation {
+  width: 30%;
+  border: 1px solid grey;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-top-right-radius: 20px;
+}
+
+.documentation h3 {
+  cursor: pointer;
+}
+
+.WorkingwithDocs {
+  width: 30%;
+  border: 1px solid grey;
+  border-left: none;
+  border-top: none;
+}
+
+.WorkingwithDocs h3 {
+  cursor: pointer;
+}
+
+.gettingStarted {
+  width: 30%;
+  border: 1px solid grey;
+  border-left: none;
+  border-top: none;
+}
+
+.gettingStarted h3 {
+  cursor: pointer;
+}
+
+.accountManagement {
+  width: 30%;
+  border: 1px solid black;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
+.accountManagement h3 {
+  cursor: pointer;
+}
+
+.productivity {
+  width: 30%;
+  border: 1px solid grey;
+  border-left: none;
+  border-top: none;
+}
+
+.productivity h3 {
+  cursor: pointer;
+}
+
+.taskHelp {
+  width: 30%;
+  border: 1px solid grey;
+  border-left: none;
+  border-top: none;
+}
+
+.taskHelp h3 {
+  cursor: pointer;
+}
+
+.totalSalesHelp {
+  width: 30%;
+  border: 1px solid grey;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
+.totalSalesHelp h3 {
+  cursor: pointer;
+}
+
+.showMore {
+  width: 95%;
+  border: 1px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.showMore h4 {
+  cursor: pointer;
+  color: #7605ff;
+}
+
+.recommended {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.recommended h2 {
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+.recommended span {
+  font-size: 20px;
+}
+
+.bottomBoxes {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.getstartBox {
+  cursor: pointer;
+}
+
+.getstartBox h2 {
+  color: black;
+}
+
+.advanceBox {
+  cursor: pointer;
+}
+
+.advanceBox h2 {
+  color: black;
+}
+
+.knowledgeBox {
+  cursor: pointer;
+}
+
+.knowledgeBox h2 {
+  color: black;
+}
+
+.usersettBox {
+  cursor: pointer;
+}
+
+.usersettBox h2 {
+  color: black;
 }/*# sourceMappingURL=style.css.map */

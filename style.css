@@ -208,7 +208,7 @@ button {
 }
 
 .blue {
-  background-color: #289dd2;
+  background-color: #029af7;
   width: 15px;
   height: 15px;
   border-radius: 7.5px;
@@ -311,9 +311,6 @@ button {
   margin-bottom: 20px;
 }
 
-/* .calendar:nth-child(5):nth-child(5){
-    background-color: var.$standard-blue;
-} */
 .row {
   display: flex;
   font-size: 16px;
@@ -623,4 +620,8 @@ button {
 
 .usersettBox h2 {
   color: black;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.136);
 }/*# sourceMappingURL=style.css.map */

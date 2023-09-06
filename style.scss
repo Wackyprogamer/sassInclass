@@ -8,10 +8,18 @@
     font-size: $defaultFontSize;
 }
 
+
 %box{
     background-color: white;
     box-shadow: lightgray 0 0 5px 5px;
     border-radius: 5px;
+}
+%top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid lightgrey;
+    align-items: center;
+    padding: 0 25px; 
 }
 %icon{
     width: 30px;
@@ -30,8 +38,10 @@ body{
 }
 .content{
     background-color: var.$content-color;
-    max-width: 1600px;
-    margin: 100px auto 100px auto
+    max-width: 1800px;
+    margin: 100px 50px 100px 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 h3{
     font-size: 24px;
@@ -41,10 +51,10 @@ h4{
 }
 h6{
     font-size: 18px;
-    margin: 0 100% 0 0;
+    margin: 0;
 }
 i{
-    margin-right: 50px;
+    margin-right: 15px;
     font-size: 24px
 }
 button{
@@ -58,13 +68,13 @@ button{
     height: 75px;
     width: auto;
     align-items: center;
+    justify-content: space-between
 }
 
 
 
 .top{
     @extend %box;
-
 }
 .header{
     display: flex;
@@ -78,8 +88,8 @@ button{
 }
 .profile img{
     object-fit: cover;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 20px;
     border: 3px lightgrey solid;
     margin-right: 15px;
@@ -98,30 +108,46 @@ button{
     font-size: 20px;
     align-items: center;
 }
-.nav a img{
-    @extend %icon;
-}
 
+
+.dashboardTitle{
+    margin-top: 100px;
+    margin-left: 100px;
+}
 
 
 .dashboard{
     display: flex;
-    margin: 50px 100px 50px 100px;
+    max-width: 1200px;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.leftSection{
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 2;
 }
-.topSection{
+.rightSection{
     display: flex;
-    justify-content: baseline;
+    flex-direction: column;
+    flex-grow: 1;
 }
-.bottomSection{
+.boxRow{
     display: flex;
+    flex-direction: row;
 }
 
 
 .overview{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 2;
+    max-width: 750px;
 }
 .overviewTop{
     display: flex
@@ -129,7 +155,15 @@ button{
 .overviewItems{
     @extend %box;
     height: 300px;
-
+    display: flex;
+    justify-content: space-around;
+}
+.overviewItems a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: 20px;
 }
 .overviewItems img{
     @extend %icon;
@@ -137,14 +171,34 @@ button{
 
 
 
-.plans{
-    flex-grow: 1;
-    margin-left: 50px;
-}
+
+
 .totalSalesSection{
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+    max-width: 400px;
+}
+.totalSalesSection .boxHead{
+    margin-left: 50px;
+}
+.totalSalesSection span{
+    display: flex;
+    align-items: center;
+}
+.teal{
+    background-color: #41c1ba;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    margin-right: 10px;
+}
+.blue{
+    background-color: #289dd2;
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    margin-right: 10px;
 }
 .total{
     display: flex;
@@ -152,6 +206,7 @@ button{
     @extend %box;
     height: 300px;
     padding: 0 15px;
+    margin: 0;
 }
 .y-axis{
     display: flex;
@@ -162,8 +217,8 @@ button{
     display: flex
 }
 .graph img{
-    width: 400px;
-    height: 150px;
+    width: 350px;
+    height: 125px;
 }
 .graphDates{
     display: flex;
@@ -173,40 +228,98 @@ button{
 
 
 .currentTasks{
+    margin-right: 50px;
     flex-grow: 1;
+    max-width: 350px
 }
 .currentItems{
     @extend %box;
+    padding-bottom: 20px;
 }
 .topCurrent{
+    @extend %top;
+}
+
+
+.midCurrent .task{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.task{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 25px;
+}
+.taskTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.taskTop>*{
+    font-size: 16px;
+}
+.taskBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.midCurrent .task h6{
+    margin-right: 50px;
+}
+.task div{
     display: flex;
 }
+.gray{
+    background-color: rgb(75, 75, 75);
+}
+.gray h6{
+    color: lightgray;
+}
+.gray .profile{
+    color: lightgray;
+}
+
+
 
 
 .calendar{
+    max-width: 350px;
     @extend %box;
+    flex-grow: 1;
 }
 .calendarTop{
-    display: flex;
-    align-items: center;
+    @extend %top;
+    margin-bottom: 20px;
 }
+/* .calendar:nth-child(5):nth-child(5){
+    background-color: var.$standard-blue;
+} */
 .row {
     display: flex;
-    font-size: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 20px;
 }
 .row div {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 40px;
+    margin: 5px;
 }
+
 
 
 .userVisits{
-    flex-grow: 1;
     margin-left: 50px;
+    max-width: 400px;
 }
 .viewsSection{
     display: flex;
     @extend %box;
+    padding: 20px;
 }
 .viewGraph img{
     width: 200px;
@@ -216,7 +329,21 @@ button{
 
 
 .messageUser{
-width: 300px
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @extend %box;
+    background-color: var.$standard-blue;
+    padding: 20px;
+    margin-top: 50px;
 }
-
+.messageUser>*{
+    color: white;
+}
+.messageUser button{
+    background-color: var.$standard-blue;
+    color: white;
+    border-color: white;
+    margin-top: 50px;
+}
 
